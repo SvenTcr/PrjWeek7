@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Banking Webapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block">
+    <h1>Overzicht Cryptovaluta</h1>
+    <div id="Bitcoinvaluta">
+        Bitcoin: €00,00 (90000 per eenheid)<br>
+    </div>
+    <div id="Ethereumvaluta">
+        Ethereum: €00,00 (4800 per eenheid)<br>
+    </div>
+    <div id="Litecoinvaluta">
+        Litecoin: €00,00 (250 per eenheid)<br>
+    </div> <br> <br>
+    <h2>Kies een cryptovaluta:</h2>
+    <select id="cryptovaluta">
+        <option value="">Kies een valuta</option>
+        <option value="Bitcoin">Bitcoin</option>
+        <option value="Ethereum">Ethereum</option>
+        <option value="Litecoin">Litecoin</option>
+    </select>
+    <br> <br>
+    <input type="number" id="Bedrag" placeholder="Bedrag">
+    <br>
+    <button id="button" onclick="kopen()">Kopen</button>
+    <br>
+    <button id="button2" onclick="verkopen()">Verkopen</button>
+    <div id="notification"></div>
+    <script src="app.js"></script>
+</body>
+</html>

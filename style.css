@@ -1,0 +1,59 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    background-color: rgb(59, 16, 16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.block {
+    width: 70vh;
+    height: 90vh;
+    background-color: #bcbcbc;
+    border: 5px solid #c00000; 
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.5;
+    }
+}
+
+#Bitcoinvaluta, #Ethereumvaluta, #Litecoinvaluta {
+    background-color: rgb(241, 120, 60);
+    border-radius: 10px;
+    margin-top: 1rem;
+    animation: blink 3s infinite;
+}
+
+#button, #button2 {
+    margin-top: 1rem;
+    background-color: rgb(59, 16, 16);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+   width: 512px;
+}
+
+#notification {
+    color: green;
+    margin-top: 1rem;
+}
